@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#8E77D6">
+<title>Kitap Kulübü — İndir</title>
+<meta name="description" content="Kitap Kulübü: birlikte oku, kulüp kur, aynı kitabı konuş. Android ve iOS'ta ücretsiz.">
+<meta property="og:title" content="Kitap Kulübü — Birlikte Oku">
+<meta property="og:description" content="Kulüp kur, aynı kitabı oku, üstüne konuş. Ücretsiz — misafir girişi var.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Manrope:wght@500;600;700;800&display=swap">
+<style>
+  :root { --ink:#E9E7F2; --muted:rgba(233,231,242,0.72); }
+  * { box-sizing:border-box; }
+  html, body { margin:0; min-height:100%; }
+  body {
+    font-family:'Manrope', system-ui, -apple-system, sans-serif;
+    color:var(--ink);
+    background:radial-gradient(130% 90% at 50% 10%, #B7A6EF 0%, #A48EE6 34%, #8E77D6 68%, #7460C0 100%) fixed;
+    min-height:100vh;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center;
+    padding:56px 24px calc(40px + env(safe-area-inset-bottom));
+  }
+  .logo {
+    width:120px; height:120px; border-radius:30px;
+    background:linear-gradient(150deg, #C3B4F2, #9C86E0);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 20px 44px rgba(24,12,60,0.42);
+    margin-bottom:26px;
+  }
+  .wordmark { font-weight:800; font-size:16px; letter-spacing:4px; text-transform:uppercase; color:var(--muted); }
+  h1 {
+    font-family:'Playfair Display', Georgia, serif; font-weight:800;
+    font-size:40px; line-height:1.08; margin:10px 0 0; letter-spacing:-0.5px;
+    text-wrap:balance;
+  }
+  .sub { font-size:17px; font-weight:500; color:var(--muted); margin:16px auto 0; max-width:30ch; line-height:1.45; text-wrap:pretty; }
+  .btns { display:flex; flex-direction:column; gap:14px; width:100%; max-width:380px; margin-top:38px; }
+  .store {
+    display:flex; align-items:center; justify-content:center; gap:14px;
+    background:#121016; color:#fff; text-decoration:none;
+    border:1px solid rgba(255,255,255,0.16); border-radius:18px;
+    padding:15px 22px; box-shadow:0 14px 30px rgba(24,12,60,0.34);
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .store:active { transform:scale(0.98); }
+  .store .t { text-align:left; line-height:1.16; }
+  .store .t small { display:block; font-size:11px; font-weight:600; letter-spacing:.4px; opacity:.7; text-transform:uppercase; }
+  .store .t b { font-size:20px; font-weight:800; }
+  .foot { margin-top:34px; font-size:14px; color:var(--muted); }
+  .foot a { color:var(--ink); text-decoration:none; border-bottom:1px solid rgba(233,231,242,0.3); padding-bottom:1px; }
+  .foot a:hover { border-color:var(--ink); }
+  @media (min-width:600px){ .btns{ flex-direction:row; } h1{ font-size:46px; } }
+</style>
+</head>
+<body>
+  <div class="logo" aria-hidden="true">
+    <svg width="70" height="60" viewBox="0 0 46 40" fill="none">
+      <path d="M23 9C16.5 4.5 8.5 4 2.5 6.2 1.6 6.5 1 7.4 1 8.4V32.2c0 1.5 1.5 2.6 3 2.1C9.7 32.4 17 33 23 37Z" fill="#E9E7F2"/>
+      <path d="M23 9c6.5-4.5 14.5-5 20.5-2.8.9.3 1.5 1.2 1.5 2.2V32.2c0 1.5-1.5 2.6-3 2.1C36.3 32.4 29 33 23 37Z" fill="#D9D2EA"/>
+      <rect x="21.6" y="9" width="2.8" height="28" rx="1.4" fill="#6A4AE6"/>
+    </svg>
+  </div>
+
+  <div class="wordmark">Kitap Kulübü</div>
+  <h1>Birlikte okumak daha güzel</h1>
+  <p class="sub">Kulüp kur, aynı kitabı oku, üstüne konuş. Ücretsiz — misafir girişi var.</p>
+
+  <div class="btns" id="btns">
+    <a class="store" id="ios" href="https://apps.apple.com/app/id6796501814" rel="noopener">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.05 12.04c-.03-2.6 2.13-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.12.94-3.93.94-.81 0-2.06-.92-3.39-.9-1.74.03-3.35 1.01-4.25 2.57-1.81 3.14-.46 7.79 1.3 10.34.86 1.25 1.88 2.65 3.22 2.6 1.29-.05 1.78-.83 3.34-.83 1.56 0 2 .83 3.37.81 1.39-.03 2.27-1.27 3.12-2.53.98-1.45 1.39-2.85 1.41-2.92-.03-.01-2.71-1.04-2.74-4.13zM14.7 4.9c.71-.86 1.19-2.06 1.06-3.25-1.02.04-2.26.68-2.99 1.54-.66.76-1.23 1.98-1.08 3.15 1.14.09 2.3-.58 3.01-1.44z"/></svg>
+      <span class="t"><small>Şuradan indir</small><b>App Store</b></span>
+    </a>
+    <a class="store" id="android" href="https://play.google.com/store/apps/details?id=com.kitapkulubu.app" rel="noopener">
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3.5 2.2a1 1 0 0 0-.5.87v17.86a1 1 0 0 0 .5.87L13 12.03v-.06L3.5 2.2z" fill="#fff"/>
+        <path d="M16.48 8.72 4.9 2.2a1 1 0 0 0-1.4.02L13 11.97l3.48-3.25z" fill="#fff" fill-opacity="0.72"/>
+        <path d="M16.48 15.28 13 12.03 3.5 21.78a1 1 0 0 0 1.4.02l11.58-6.52z" fill="#fff" fill-opacity="0.86"/>
+        <path d="m16.48 8.72-3.48 3.25v.06l3.48 3.25 4.06-2.29c1.15-.65 1.15-1.71 0-2.36L16.48 8.72z" fill="#fff" fill-opacity="0.6"/>
+      </svg>
+      <span class="t"><small>Şuradan indir</small><b>Google Play</b></span>
+    </a>
+  </div>
+
+  <p class="foot">
+    <a href="privacy-policy.html" id="privacy">Gizlilik</a> &nbsp;·&nbsp;
+    <a href="mailto:ilaydazeynepozdemir@gmail.com">İletişim</a>
+  </p>
+
+  <script>
+    // Cihaza göre doğru mağazayı öne al (ikisi de görünür).
+    (function () {
+      try {
+        var ua = navigator.userAgent || navigator.vendor || '';
+        var box = document.getElementById('btns');
+        var ios = document.getElementById('ios');
+        var android = document.getElementById('android');
+        if (/android/i.test(ua)) box.insertBefore(android, ios);
+        else if (/iphone|ipad|ipod/i.test(ua)) box.insertBefore(ios, android);
+      } catch (e) {}
+    })();
+  </script>
+</body>
+</html>
